@@ -7,10 +7,8 @@
         foreach ($productes as $producte) {
 ?>
             <form action="modificar.php" method="POST">
-                <div class="form-group">
-                    <label for="id">Id:</label><br>
-                    <input type="text" class="form-control" id="id" name="id" value="<?php echo $_GET['id']; ?>" readonly><br>
-                </div>
+                <label for="id">Id:</label><br>
+                <input type="text" class="form-control" id="id" name="id" value="<?php echo $_GET['id']; ?>" readonly><br>
                 <label for="nom">Nom:</label><br>
                 <input type="text" id="nom" name="nom" value="<?php echo $producte['nom'] ?>"><br>
                 <label for="preu">Preu:</label><br>
